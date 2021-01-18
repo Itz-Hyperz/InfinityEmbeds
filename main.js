@@ -1,4 +1,5 @@
 // Source-code by Hyperz#0001
+// i am now shitposting
 
 const Discord = require ('discord.js');
 const config = require ('./config.json');
