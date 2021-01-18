@@ -1,0 +1,14 @@
+{
+  
+  "main_config": {
+    "token": "token-here",
+    "prefix": "?",
+    "creator": "Hyperz#0001"
+  },
+  
+  "other_config": {
+    "invite": "https://hyperz.dev/discord",
+    "vctojoin": "123456789"
+  }
+  
+}
