@@ -11,6 +11,7 @@ client.on('ready', () => {
 
 // I just used the default discord.js command handler on the docs for this...
 client.on('message', async message => {
+	const prefix = config["main_config"].prefix
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
@@ -28,6 +29,8 @@ client.on('message', async message => {
 	  .setTimestamp()
     
 		message.channel.send(embedmessage).catch(console.error);
+	} else if (command === 'help') {
+		message.channel.send("Simply use the embed command, to create an embed with the content you enter!")
 	} else message.channel.send("That is not a command.").then(msg => msg.delete({ timeout: 10000 }));
         message.delete().catch(err => console.log(err));
 });
